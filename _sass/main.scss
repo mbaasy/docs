@@ -1,0 +1,55 @@
+@import 'bootstrap/bootstrap';
+
+table {
+  @extend .table;
+}
+
+td {
+  code {
+    word-break: normal;
+  }
+}
+
+@media (min-width: 768px) {
+  .bd-navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+  }
+}
+
+.bd-navbar {
+  min-height: 4rem;
+}
+
+@media (min-width: 1200px) {
+  .bd-sidebar {
+    -ms-flex: 0 1 320px;
+    flex: 0 1 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bd-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 100vh;
+  }
+}
+@media (min-width: 768px) {
+  .bd-sidebar {
+    border-right: 1px solid rgba(0,0,0,.1);
+  }
+}
+.bd-sidebar {
+  -ms-flex-order: 0;
+  order: 0;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.bd-content {
+  -ms-flex-order: 1;
+  order: 1;
+}

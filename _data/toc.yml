@@ -1,0 +1,31 @@
+docs:
+  - title: Home
+    href: /
+  - title: Getting started
+    docs:
+      - title: Configuring an iOS (App Store) app
+        href: /getting_started/app_store
+      - title: Configuring an Android (Google Play) app
+        href: /getting_started/play_store
+  - title: Client API
+    docs:
+    - title: Apple App Store
+      href: /client_api/apple_app_store
+    - title: Google Play Store
+      href: /client_api/google_play_store
+  - title: GraphQL API
+    docs:
+      - title: GraphQL API overview
+        href: /graphql
+      - title: Programmatic access
+        href: /graphql/programmatic_access
+  - title: Integrations
+    docs:
+      - title: Webhooks
+        href: /integrations/webhooks
+      - title: Amazon SQS
+        href: /integrations/sqs
+  - title: Resource descriptions
+    docs:
+      - title: In App Purchase Resource
+        href: '/resources/in_app_purchase'
