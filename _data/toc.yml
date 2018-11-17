@@ -3,24 +3,30 @@ docs:
     href: /
   - title: Getting started
     docs:
-      - title: Configuring an iOS (App Store) app
-        href: /getting_started/app_store
+      - title: Configuring an iOS (Apple App Store) app
+        href: /getting_started/apple_app_store
       - title: Configuring an Android (Google Play) app
-        href: /getting_started/play_store
+        href: /getting_started/google_play
+      - title: Subscription update fetching
+        href: /getting_started/subscription_update_fetching
   - title: Client API
     docs:
-    - title: Apple App Store
-      href: /client_api/apple_app_store
-    - title: Google Play Store
-      href: /client_api/google_play_store
+      - title: Authentication
+        href: /client_api/authentication
+      - title: Uploading Apple App Store receipts
+        href: /client_api/apple_app_store
+      - title: Uploading Google Play receipts
+        href: /client_api/google_play
   - title: GraphQL API
     docs:
       - title: GraphQL API overview
-        href: /graphql
-      - title: Programmatic access
-        href: /graphql/programmatic_access
+        href: /graphql/overview
+      - title: Authentication
+        href: /graphql/authentication
   - title: Integrations
     docs:
+      - title: Event payloads
+        href: /integrations/event_payloads
       - title: Webhooks
         href: /integrations/webhooks
       - title: Amazon SQS
@@ -28,4 +34,4 @@ docs:
   - title: Resource descriptions
     docs:
       - title: In App Purchase Resource
-        href: '/resources/in_app_purchase'
+        href: /resources/in_app_purchase

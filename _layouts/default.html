@@ -11,12 +11,12 @@
     <link rel='icon' sizes='16x16 24x24 32x32 48x48 64x64' href='/favicon.ico' />
     <link rel='shortcut icon' sizes='16x16 24x24 32x32 48x48 64x64' href='/favicon.ico' />
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | Mbaasy</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
-        <aside class="col-12 col-md-3 col-xl-2 bd-sidebar">
+        <aside class="col-12 col-md-3 col-xl-2 pb-5 bd-sidebar">
           <h1 class="h3 pt-2 text-center">
             <a href="https://mbaasy.com">
               <svg fill="#007bff" viewBox="0 0 547 139" xmlns="http://www.w3.org/2000/svg">
@@ -27,19 +27,19 @@
             <br />
             Documentation
           </h1>
-          <nav class="mt-5">
+          <nav>
             <ul class="nav flex-column">
               {% for header in site.data.toc.docs %}
                 <li class="nav-item">
                   {% if header.href %}
-                    <a class="nav-link" href="{{ header.href}}">{{ header.title }}</a>
+                    <a class="nav-link" href="{{ header.href }}" title="{{ header.title }}">{{ header.title }}</a>
                   {% else %}
                     {{ header.title }}
                   {% endif %}
                   <ul class="nav flex-column">
                     {% for doc in header.docs %}
                       <li class="nav-item">
-                        <a class="nav-link" href="{{ doc.href }}">{{ doc.title }}</a>
+                        <a class="nav-link" href="{{ doc.href }}" title="{{ header.title }} - {{ doc.title }}">{{ doc.title }}</a>
                       </li>
                     {% endfor %}
                   </ul>
@@ -48,11 +48,12 @@
             </ul>
           </nav>
         </aside>
-        <main class="col-12 col-md-9 col-xl-10 bd-content">
-          <article>{{ content }}</article>
-          <footer class="text-center">
+        <main class="col-12 col-md-9 col-xl-10 bd-main">
+          <article id="top" class="bd-article">{{ content }}</article>
+          <footer class="text-center bd-footer">
+            <div class="text-right">[<a href="#top">Back to top</a>]</div>
             <hr />
-            <p>Suggestions or improvements? Contribute to this page on <a href="https://github.com/mbaasy/docs/blob/master/{{ page.path }}">GitHub</a>.</p>
+            <p>Suggestions or improvements? <a href="https://github.com/mbaasy/docs/blob/master/{{ page.path }}">Contribute to this page on GitHub</a>.</p>
             <p><small>© Mbaasy Cloud UG (haftungsbeschränkt)</small></p>
           </footer>
         </main>

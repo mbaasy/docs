@@ -1,6 +1,5 @@
-url: https://docs.mbaasy.com
 sass:
   sass_dir: _sass
   style: compressed
 plugins:
-  - jekyll-sitemap
+  - jekyll-titles-from-headings

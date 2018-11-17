@@ -1,7 +1,3 @@
----
-title: In App Purchase Resource
----
-
 # In App Purchase Resource
 
 | Name | Type | Description |

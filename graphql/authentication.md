@@ -1,14 +1,8 @@
----
-title: Programmatic Access
----
+# GraphQL API - Authentication
 
-# GraphQL API
----
-## Programmatic Access with Service Accounts
+Programmatic access to the GraphQL API requires authentication via a Service Account furnished [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token).
 
-Service accounts are like users with programatic access to your organization's data via the GraphQL API.
-
-To use the GraphQL API with a service account, you must generate a [JWT Token](https://en.wikipedia.org/wiki/JSON_Web_Token), signed with the private key you receive when you create a service account.
+To use the GraphQL API with a service account, you must generate a JWT, signed with the private key you receive when you create a service account.
 
 It is important to note that **Mbaasy does not save the private key** anywhere on our system, we make it available to you only on creation. If you loose your private key you will need to create a new service account.
 
@@ -60,12 +54,12 @@ curl -X POST \
      https://api.mbaasy.com/graphql
 ```
 
-### Additional resources
+## Additional resources
 
 * [Wikipedia article](https://en.wikipedia.org/wiki/JSON_Web_Token)
 * [RFC specification](https://tools.ietf.org/html/rfc7519)
 
-#### JWT Libraries
+### JWT Libraries
 
 * [Ruby Library](https://github.com/jwt/ruby-jwt)
 * [Node.js Library](https://github.com/auth0/node-jsonwebtoken)
@@ -73,6 +67,6 @@ curl -X POST \
 * [Java Library](https://github.com/auth0/java-jwt)
 * [Swift Library](https://github.com/auth0/JWTDecode.swift)
 
-#### Examples
+### Examples
 
 * [Ruby example](https://gist.github.com/marcgreenstock/2529c9d19eef20d1b5b75619cf3a71cb)

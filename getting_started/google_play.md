@@ -1,18 +1,13 @@
----
-title: Getting started - Configuring an Android (Play Store) app
----
-
-# Getting started
----
-## Configuring an Android (Play Store) app
+# Getting Started - Configuring an Android (Google Play) app
 
 1. [Package name](#package-name)
 1. [License Key](#license-key)
 1. [Service account credentials](#service-account-credentials)
+1. [Real-time developer notifications](#real-time-developer-notifications)
 
 ---
 
-### Package name
+## Package name
 
 The *Package name* uniquely identifies your app in the *Play Store*.
 
@@ -22,7 +17,7 @@ You will find your *Package name* in the list of applications beneath the app's 
 
 ---
 
-### License key
+## License key
 
 The *license key* is used to verify the *purchase signature* when a new purchase is made.
 
@@ -36,7 +31,7 @@ You will find your *License key* in the *Licensing & in-app billing section*.
 
 ---
 
-### Service account credentials
+## Service account credentials
 
 The *service account credentials**is a JSON file containing a private key used for authenticating with the Google Play Developer API.
 
@@ -81,3 +76,13 @@ Click on the *Grant access* button and a new page will open. Select *Finance* fr
 ![Step 7](/assets/images/play_store/service-account-7.png)
 
 Click *Add user* and you're done.
+
+---
+
+## Real-time developer notifications
+
+Google Play can send event notifications when subscription entitlements change. Every Google Play App registered with Mbaasy come furnished with a unique Google Cloud Pub/Sub Topic, making the process as simple as copying the Pub/Sub topic from the *Mbaasy Console > [App] > Settings > Play Store settings* page and pasting it on the *Google Play Console > [App] > Development tools > Services & APIs* page in the *Real-time developer notifications* section.
+
+![Real-time developer notifications](/assets/images/play_store/real-time-developer-notifications.png)
+
+This will ensure Mbaasy stays up-to-date with any changes made to your subscriptions.

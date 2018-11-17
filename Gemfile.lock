@@ -243,6 +243,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-readme-index
   jekyll-sitemap
   tzinfo-data
 

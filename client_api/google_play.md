@@ -1,18 +1,12 @@
----
-title: Client API - Google Play Store
----
-
-# Client API
----
-## Google Play Store Client API
+# Client API - Uploading Google Play Receipts
 
 `POST` Google Play Store purchase data to the Mbaasy using this API.
 
-### Endpoint URL
+## HTTP endpoint
 
-`https://api.mbaasy.com/client/google_play/purchase_orders`
+**POST** `https://api.mbaasy.com/client/google_play/purchase_orders`
 
-### Parameters
+## JSON request body
 
 | Name | Required | Type | Description |
 | ---- | -------- | ---- | ----------- |
@@ -24,14 +18,15 @@ title: Client API - Google Play Store
 
 ---
 
-## Legacy Google Play Store Client API
+# Client API - Legacy Google Play
 
 For existing code bases that do not retain the original `INAPP_PURCHASE_DATA` and `INAPP_DATA_SIGNATURE` you can use this endpoint instead.
 
-### Legacy Endpoint URL
-`https://api.mbaasy.com/client/google_play/purchase_orders/legacy`
+## Legacy Endpoint URL
 
-### Parameters
+**POST** `https://api.mbaasy.com/client/google_play/purchase_orders/legacy`
+
+## JSON request body
 
 | Name | Required | Type | Description |
 | ---- | -------- | ---- | ----------- |
