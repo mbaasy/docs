@@ -3,3 +3,10 @@ sass:
   style: compressed
 plugins:
   - jekyll-titles-from-headings
+  - jekyll-seo-tag
+  - jekyll-sitemap
+url: https://docs.mbaasy.com
+title: Mbaasy docs
+permalink: pretty
+twitter:
+  username: mbaasy
