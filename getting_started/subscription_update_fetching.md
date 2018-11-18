@@ -8,7 +8,7 @@ You'll find the subscription fetching controls on the *[Mbaasy App Publisher Con
   <p>Please be aware that subscription update fetching counts toward your allocated events regardless of any detected changes to the subscription properties.</p>
 </div>
 
-![Subscription update fetching](/assets/images/subscription_update_fetching.png)
+![Subscription update fetching](/assets/images/subscription_update_fetching.jpg)
 
 The following levels enable more precise tracking of changes to properties such as the auto renewing preference that don't trigger a status update notification from the App Store and Play Store.
 
