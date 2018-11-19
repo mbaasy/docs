@@ -1,7 +1,6 @@
 docs:
-  - title: Home
-    href: /
   - title: Getting started
+    desc: Everything you need to setup and configure your apps and get up and running quickly on Mbaasy.
     docs:
       - title: Configuring an iOS (Apple App Store) app
         href: /getting_started/apple_app_store/
@@ -10,6 +9,7 @@ docs:
       - title: Subscription update fetching
         href: /getting_started/subscription_update_fetching/
   - title: Client API
+    desc: The client API is responsible for handling communication between your app(s) and Mbaasy. These pages describe, in detail, the RESTful API endpoints.
     docs:
       - title: Authentication
         href: /client_api/authentication/
@@ -18,12 +18,14 @@ docs:
       - title: Uploading Google Play receipts
         href: /client_api/google_play/
   - title: GraphQL API
+    desc: All your data is accessible via our GraphQL API. These pages will describe how to query your data to get the most out of Mbaasy.
     docs:
       - title: GraphQL API overview
         href: /graphql/overview/
       - title: Authentication
         href: /graphql/authentication/
   - title: Integrations
+    desc: Integrations faciliate asynchronous communication between Mbaasy and your API or event stream. These pages describe how to consume events.
     docs:
       - title: Event payloads
         href: /integrations/event_payloads/
@@ -31,7 +33,8 @@ docs:
         href: /integrations/webhooks/
       - title: Amazon SQS
         href: /integrations/sqs/
-  - title: Resource descriptions
+  - title: Glossary
+    desc: The glossary describes the terminology Mbaasy uses and details the resource models.
     docs:
       - title: In App Purchase Resource
-        href: /resources/in_app_purchase/
+        href: /glossary/in_app_purchase_resource/

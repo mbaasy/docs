@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<h1>Mbaasy Documentation Portal</h1>
+{% for header in site.data.toc.docs %}
+  <div class="card mb-3">
+    <h2 class="card-header h5">{{ header.title }}</h2>
+    <div class="card-body">
+      <p>{{ header.desc }}</p>
+      <ul>
+        {% for doc in header.docs %}
+          <li>
+            <a href="{{ doc.href }}" title="{{ header.title }} - {{ doc.title }}">{{ doc.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endfor %}

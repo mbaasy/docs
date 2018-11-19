@@ -1,3 +1,5 @@
+$headings-font-weight: normal;
+
 // @import 'bootstrap/bootstrap';
 @import "bootstrap/functions";
 @import "bootstrap/variables";
@@ -6,25 +8,19 @@
 @import "bootstrap/reboot";
 @import "bootstrap/type";
 @import "bootstrap/images";
+@import "bootstrap/card";
 @import "bootstrap/code";
 @import "bootstrap/grid";
 @import "bootstrap/tables";
+@import "bootstrap/list-group";
 @import "bootstrap/nav";
 @import "bootstrap/utilities";
 @import "bootstrap/print";
 @import 'highlight';
 
-.bd-article table {
-  @extend .table;
-}
-
-.bd-article img {
-  @extend .img-fluid;
-}
-
-.search {
-  margin-left: -15px;
-  margin-right: -15px;
+body {
+  display: grid;
+  grid-template-columns: minmax(252px,calc(50% - 260px)) 770px 1fr;
 }
 
 h1 {
@@ -39,53 +35,65 @@ td {
   }
 }
 
-@media (min-width: 1200px) {
-  .bd-sidebar {
-    -ms-flex: 0 1 320px;
-    flex: 0 1 320px;
-  }
-}
-
-@media (min-width: 768px) {
-  .bd-sidebar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    height: 100vh;
-    border-right: 1px solid rgba(0,0,0,.1);
-  }
-}
-
-.bd-sidebar {
-  -ms-flex-order: 0;
+.sidebar {
   order: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   overflow-y: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 100vh;
+  background: #f5f7f9;
+  border-right: 1px solid rgba(0,0,0,0.1);
+  header, nav {
+    width: 226px;
+  }
+  nav ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      padding-bottom: 10px;
+    }
+    a {
+      display: block;
+      padding-right: 15px;
+    }
+  }
+  header {
+    h1 {
+      line-height: 50px;
+    }
+    svg {
+      width: 150px;
+    }
+    a {
+      color: #212529;
+    }
+  }
+
 }
 
-.bd-main {
+.main {
+  order: 1;
   -ms-flex-order: 1;
   order: 1;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-}
+  padding: 15px;
+  table {
+    @extend .table;
+  }
+  img {
+    @extend .img-fluid;
+  }
+  .article {
+    flex-grow: 1;
+  }
 
-.bd-article {
-  flex-grow: 1;
-}
-
-.bd-article, .bd-footer {
-  flex-shrink: 0;
-}
-
-input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button
-{
-box-sizing: content-box;
-line-height: normal;
-}
-
-.gsc-tabsArea div
-{
-  overflow: visible;
+  .article, .footer {
+    flex-shrink: 0;
+  }
 }
