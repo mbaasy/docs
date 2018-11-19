@@ -18,14 +18,14 @@ docs:
       - title: Uploading Google Play receipts
         href: /client_api/google_play/
   - title: GraphQL API
-    desc: All your data is accessible via our GraphQL API. These pages will describe how to query your data to get the most out of Mbaasy.
+    desc: All your data is accessible via our GraphQL API. These pages show you how to query your data to get the most out of Mbaasy.
     docs:
       - title: GraphQL API overview
         href: /graphql/overview/
       - title: Authentication
         href: /graphql/authentication/
   - title: Integrations
-    desc: Integrations faciliate asynchronous communication between Mbaasy and your API or event stream. These pages describe how to consume events.
+    desc: Integrations faciliate asynchronous communication between Mbaasy and your API or event stream. These pages show you how to consume events.
     docs:
       - title: Event payloads
         href: /integrations/event_payloads/
@@ -37,6 +37,6 @@ docs:
     desc: The glossary describes the terminology Mbaasy uses and details the resource models.
     docs:
       - title: Terminology
-        href: /glossary/terminology
+        href: /glossary/terminology/
       - title: In App Purchase Resource
         href: /glossary/in_app_purchase_resource/

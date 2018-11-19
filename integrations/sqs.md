@@ -1,6 +1,6 @@
 # Integrations - Amazon SQS
 
-Like [Webooks](/integrations/webhooks), Amazon SQS integrations are a way to deliver [Event payloads](/integrations/event_payloads) to your API or data consumer via an Amazon SQS Queue.
+Like [Webooks](/integrations/webhooks), Amazon SQS integrations are a way to deliver [Event payloads](/integrations/event_payloads/) to your API or data consumer via an Amazon SQS Queue.
 
 To enable an SQS integration, first [create a standard or FIFO queue](https://console.aws.amazon.com/sqs/home) on the AWS console and make note of the `ARN` and `URL`.
 
@@ -21,7 +21,7 @@ Next, [create a policy](https://console.aws.amazon.com/iam/home?#/policies$new?s
 
 `sqs:SendMessage` is the only permission Mbaasy needs to deliver messages to your queue.
 
-Next, [create a new IAM user](https://console.aws.amazon.com/iam/home?#/users$new?step=details) with *Programmatic accsss* and attach the new policy.
+Next, [create a new IAM user](https://console.aws.amazon.com/iam/home?#/users$new?step=details) with *Programmatic access* and attach the new policy.
 
 Once your user is created, a new `Access Key ID` and `Secret Access Key` will be furnished for you.
 

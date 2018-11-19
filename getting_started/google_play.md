@@ -44,7 +44,7 @@ You will need a linked Google Play Android Developer project, if you don't alrea
 
 ![Step 1](/assets/images/play_store/service-account-1.jpg)
 
-Next step is to create a *service account*, click the *Create service account* button and read the instructions carfully.
+Next step is to create a *service account*, click the *Create service account* button and read the instructions carefully.
 
 It will guide to you to navigate to the *Google API Console* to create your *service account* there.
 
