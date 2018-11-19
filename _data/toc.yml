@@ -36,5 +36,7 @@ docs:
   - title: Glossary
     desc: The glossary describes the terminology Mbaasy uses and details the resource models.
     docs:
+      - title: Terminology
+        href: /glossary/terminology
       - title: In App Purchase Resource
         href: /glossary/in_app_purchase_resource/

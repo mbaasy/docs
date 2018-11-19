@@ -5,6 +5,9 @@
 1. [Service account credentials](#service-account-credentials)
 1. [Real-time developer notifications](#real-time-developer-notifications)
 
+
+![Play Store Settings](/assets/images/play_store/play_store_settings.jpg)
+
 ---
 
 ## Package name

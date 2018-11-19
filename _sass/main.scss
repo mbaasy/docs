@@ -45,7 +45,7 @@ td {
   top: 0;
   z-index: 1000;
   height: 100vh;
-  background: #f5f7f9;
+  background-color: rgba(0,0,0,0.03);
   border-right: 1px solid rgba(0,0,0,0.1);
   header, nav {
     width: 226px;
@@ -72,7 +72,6 @@ td {
       color: #212529;
     }
   }
-
 }
 
 .main {

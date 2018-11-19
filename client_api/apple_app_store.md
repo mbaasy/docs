@@ -1,6 +1,6 @@
 # Client API - Uploading Apple App Store Receipts
 
-`POST` purchase receipts to the Mbaasy using this API.
+Notify Mbaasy of, and add metadata to iOS purchases and subscription receipts using this API.
 
 ## HTTP endpoint
 
