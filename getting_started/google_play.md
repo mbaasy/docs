@@ -36,7 +36,7 @@ You will find your *License key* in the *Licensing & in-app billing section*.
 
 ## Service account credentials
 
-The *service account credentials**is a JSON file containing a private key used for authenticating with the Google Play Developer API.
+The *service account credentials* is a JSON file containing a private key used for authenticating with the Google Play Developer API.
 
 To create a service account, first navigate and login to the [Google Play Developer Publisher Console - API access](https://play.google.com/apps/publish/#ApiAccessPlace) page.
 

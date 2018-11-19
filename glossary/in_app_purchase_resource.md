@@ -11,6 +11,7 @@ The table below describes the In-App Purchase Resource's properties.
 | `id` | UUID | Mbaasy database ID for the In App Purchase. |
 | `app_family_id` | UUID | Mbaasy database ID for the App Family. |
 | `fact_id` | UUID | Mbaasy database ID for the In App Purchase Fact. |
+| `version` | Integer | The number of versions (changes) that are recorded for this purchase. |
 | `marketplace` | String | The marketplace the purchase was made. |
 | `app_identifier` | String | Unique identifier for the app. |
 | `product_id` | String | Marketplace Product ID / SKU for the purchase. |
@@ -27,5 +28,8 @@ The table below describes the In-App Purchase Resource's properties.
 | `purchased_at` | Timestamp | Timestamp when the subscription first started / was originally purchased. |
 | `current_period_start_at` | Timestamp | The date and time when the current subscription period started (Only available on subscription purchases) |
 | `current_period_end_at` | Timestamp | The date and time when the current subscription period will/has ended. (Only available on subscription purchases) |
+| `canceled_at` | Timestamp | The date the purchase was canceled or auto renewing was disabled |
+| `canceled_by` | String | By whom the purchase was canceled by. Possible values are: `user`, `publisher`, `marketplace` or `unknown`. |
 | `created_at` | Timestamp | The date and time when the record was created. |
 | `updated_at` | Timestamp | The date and time when the record was most recently updated. |
+| `last_synced_at` | Timestamp | The date and time when the record was last synced with the marketplace API |
