@@ -15,7 +15,7 @@ Notify Mbaasy of, and add metadata to iOS purchases and subscription receipts us
 | `identifier_for_vendor` | No | String | The [[UIDevice identifierForVendor](https://developer.apple.com/reference/uikit/uidevice#//apple_ref/occ/instp/UIDevice/identifierForVendor)]. |
 | `user_identifier` | No | String | User ID corresponding to your user database |
 | `ip_address` | No | V4 or V6 IP Addresses | IP address of the end user. Defaults to the network request IP if omitted, send `NULL` to prevent the IP address from being stored. |
-| `metadata` | No | JSON object | Store any arbitrary data to be recorded against the purchase order. |
+| `metadata` | No | JSON object | Store any arbitrary data to be recorded against the purchase order. e.g. Campaign ID or prices. |
 
 ## HTTP response codes
 

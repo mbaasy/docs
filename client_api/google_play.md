@@ -16,7 +16,7 @@ Notify Mbaasy of, and add metadata to Android purchases and subscription receipt
 | `purchase_signature` | Yes | Base64 encoded string | A Base64 encoded string containing the `INAPP_DATA_SIGNATURE` provided by the [getBuyIntent()](https://developer.android.com/google/play/billing/billing_reference.html#getBuyIntent) method.<br />**Important:** The `INAPP_DATA_SIGNATURE` is already Base64 encoded by the [getBuyIntent()](https://developer.android.com/google/play/billing/billing_reference.html#getBuyIntent) method. There is no need to re-encode the string when sending to the API. |
 | `user_identifier` | No | String | User ID corresponding to your user database. |
 | `ip_address` | No | V4 or V6 IP Addresses | IP address of the end user. Defaults to the network request IP if omitted, send `NULL` to prevent the IP address from being stored. |
-| `metadata` | No | JSON object | Store any arbitrary data to be recorded against the purchase order. |
+| `metadata` | No | JSON object | Store any arbitrary data to be recorded against the purchase order. e.g. Campaign ID or prices. |
 
 ## HTTP response codes
 

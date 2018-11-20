@@ -18,7 +18,7 @@ To find your *Bundle ID*, navigate to the *[App Store Connect](https://appstorec
 
 ### App Specific Shared Secret
 
-To find your *App Specific Shared Secret*, navigate to the *[App Store Connect](https://appstoreconnect.apple.com) > My Apps > Apps > [App] > Features > In-App Purchases* and click on *App-Specific Shared Secret*. Click *Generate shared secret* and copy the *Shared secret*.
+To find your *App Specific Shared Secret*, navigate to the *[App Store Connect](https://appstoreconnect.apple.com) > My Apps > Apps > [App] > Features > In-App Purchases* and click on *App-Specific Shared Secret*. Click *Generate Shared Secret* and copy the *Shared Secret*.
 
 ![Shared secret](/assets/images/app_store/shared_secret.jpg)
 

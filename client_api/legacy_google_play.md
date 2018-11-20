@@ -16,7 +16,7 @@ For existing Android code bases that **do not** retain the original `INAPP_PURCH
 | `order_id` | No | String | The orderId extracted from the `INAPP_PURCHASE_DATA` provided by the getBuyIntent() method. |
 | `user_identifier` | No | String | User ID corresponding to your user database. |
 | `ip_address` | No | V4 or V6 IP Addresses | IP address of the end user. Defaults to the network request IP if omitted, send `NULL` to prevent the IP address from being stored. |
-| `metadata` | No | JSON object | Store any arbitrary data to be recorded against the purchase order. |
+| `metadata` | No | JSON object | Store any arbitrary data to be recorded against the purchase order. e.g. Campaign ID or prices. |
 
 ## HTTP response codes
 
