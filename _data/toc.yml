@@ -20,7 +20,7 @@ docs:
   - title: GraphQL API
     desc: All your data is accessible via our GraphQL API. These pages show you how to query your data to get the most out of Mbaasy.
     docs:
-      - title: GraphQL API overview
+      - title: Overview
         href: /graphql/overview/
       - title: Authentication
         href: /graphql/authentication/
