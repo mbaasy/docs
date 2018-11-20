@@ -26,7 +26,7 @@
       </header>
       <nav>
         <ul>
-          <li>
+          <li class="{% if page.url == '/' %}active{% endif %}">
             <a href="/" title="Home">Home</a>
           </li>
           {% for header in site.data.toc.docs %}
@@ -34,8 +34,10 @@
               {{ header.title }}
               <ul>
                 {% for doc in header.docs %}
-                  <li>
-                    <a href="{{ doc.href }}" title="{{ header.title }} - {{ doc.title }}">{{ doc.title }}</a>
+                  <li class="{% if page.url == doc.href %}active{% endif %}">
+                    <a href="{{ doc.href }}" title="{{ header.title }} - {{ doc.title }}">
+                      {{ doc.title }}
+                    </a>
                   </li>
                 {% endfor %}
               </ul>
