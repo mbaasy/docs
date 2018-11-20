@@ -10,6 +10,7 @@
     <link rel='icon' sizes='16x16 24x24 32x32 48x48 64x64' href='/favicon.ico' />
     <link rel='shortcut icon' sizes='16x16 24x24 32x32 48x48 64x64' href='/favicon.ico' />
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
     {% seo %}
   </head>
   <body>
@@ -44,7 +45,14 @@
       </nav>
     </aside>
     <main class="main">
-      <article id="top" class="article">{{ content }}</article>
+      <article id="top" class="article">
+        <div class="form-group">
+          <label for="search" class="sr-only">Search</label>
+          <input class="form-control" placeholder="Search" id="search" />
+          <hr />
+        </div>
+        {{ content }}
+      </article>
       <footer class="text-center footer">
         <div class="text-right">[<a href="#top">Back to top</a>]</div>
         <hr />
@@ -52,5 +60,14 @@
         <p><small>© <a href="https://mbaasy.com">Mbaasy Cloud UG</a> (haftungsbeschränkt)</small></p>
       </footer>
     </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script type="text/javascript">
+      docsearch({
+        apiKey: 'dedeca7c5a639ec8deab63dd882a9b14',
+        indexName: 'mbaasy',
+        inputSelector: '#search',
+        debug: false // Set debug to true if you want to inspect the dropdown
+      });
+    </script>
   </body>
 </html>
