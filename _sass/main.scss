@@ -55,15 +55,13 @@ td {
     list-style: none;
     padding-left: 0;
     li {
-      line-height: 2em;
       &.active a {
         background: rgba(0,0,0,0.05);
       }
     }
     a {
       display: block;
-      padding-left: 15px;
-      padding-right: 15px;
+      padding: 3px 15px 5px 15px;
       text-decoration: none;
     }
   }
