@@ -115,3 +115,22 @@ td:first-child {
 .anchorjs-link {
   text-decoration: none !important;
 }
+
+@media print {
+  body {
+    display: block;
+  }
+  .sidebar {
+    display: none;
+  }
+  .form-group {
+    display: none;
+  }
+  .main {
+    display: block;
+    .article {
+      flex-grow: unset;
+      flex-shrink: unset;
+    }
+  }
+}
