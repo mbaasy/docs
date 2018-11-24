@@ -24,7 +24,7 @@ docs:
     docs:
       - title: Overview
         href: /graphql/overview/
-      - title: Authentication
+      - title: Authentication & Programmatic Access
         href: /graphql/authentication/
   - title: Integrations
     desc: Integrations faciliate asynchronous communication between Mbaasy and your API or event stream. These pages show you how to consume events.
@@ -42,3 +42,8 @@ docs:
         href: /glossary/terminology/
       - title: In App Purchase Resource
         href: /glossary/in_app_purchase_resource/
+  - title: Appendix
+    desc: Additional resources to help you get the most out of Mbaasy.
+    docs:
+      - title: Webhook integrations with Snowplow
+        href: /appendix/snowplow/
