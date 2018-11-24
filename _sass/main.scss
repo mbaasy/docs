@@ -106,6 +106,9 @@ td:first-child {
     content: "Footnotes";
     font-weight: bold;
   }
+  li:target {
+    background: lightyellow;
+  }
 }
 
 .algolia-autocomplete {

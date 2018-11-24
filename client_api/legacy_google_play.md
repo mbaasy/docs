@@ -2,6 +2,8 @@
 
 For existing Android code bases that **do not** retain the original `INAPP_PURCHASE_DATA` and `INAPP_DATA_SIGNATURE` you can use this endpoint in place of the [recommended endpoint](/client_api/google_play).
 
+**⚠ Requires [Authentication](/client_api/authentication/).**
+
 ## Legacy Endpoint URL
 
 **POST** `https://api.mbaasy.com/client/google_play/purchase_orders/legacy`
