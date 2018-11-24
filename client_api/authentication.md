@@ -1,6 +1,6 @@
 # Client API - Authentication
 
-Authentication is handled by creating a Client API Access Token, accessible from the *[Mbaasy App Publisher Console](https://console.mbaasy.com') > [App] > Settings > General Settings* page.
+Authentication is handled by creating a Client API Access Token, accessible from the ***[Mbaasy App Publisher Console](https://console.mbaasy.com') > Apps > [App] > Settings > General Settings*** page.
 
 All requests made to the Client API must include an `Authorization` header using the `Bearer` protocol`. e.g.
 

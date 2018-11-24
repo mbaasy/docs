@@ -25,11 +25,19 @@ The table below describes the In-App Purchase Resource's properties.
 | `in_trial_period` | Boolean | Indicates if the subscription is in the trial period. |
 | `in_grace_period` | Boolean | Indicates if the marketplace is still trying to renew the subscription. |
 | `metadata` | Object | The `metadata` received via an uploaded receipt / purchase order. |
-| `purchased_at` | Timestamp | Timestamp when the subscription first started / was originally purchased. |
-| `current_period_start_at` | Timestamp | The date and time when the current subscription period started (Only available on subscription purchases) |
-| `current_period_end_at` | Timestamp | The date and time when the current subscription period will/has ended. (Only available on subscription purchases) |
-| `canceled_at` | Timestamp | The date the purchase was canceled or auto renewing was disabled |
+| `purchased_at` | Timestamp[^ts] | Timestamp when the subscription first started / was originally purchased. |
+| `current_period_start_at` | Timestamp[^ts] | The date and time when the current subscription period started (Only available on subscription purchases) |
+| `current_period_end_at` | Timestamp[^ts] | The date and time when the current subscription period will/has ended. (Only available on subscription purchases) |
+| `canceled_at` | Timestamp[^ts] | The date the purchase was canceled or auto renewing was disabled |
 | `canceled_by` | String | By whom the purchase was canceled by. Possible values are: `user`, `publisher`, `marketplace` or `unknown`. |
-| `created_at` | Timestamp | The date and time when the record was created. |
-| `updated_at` | Timestamp | The date and time when the record was most recently updated. |
-| `last_synced_at` | Timestamp | The date and time when the record was last synced with the marketplace API |
+| `created_at` | Timestamp[^ts] | The date and time when the record was created. |
+| `updated_at` | Timestamp[^ts] | The date and time when the record was most recently updated. |
+| `last_synced_at` | Timestamp[^ts] | The date and time when the record was last synced with the marketplace API |
+
+[^ts]: Timestamps are objects that contain an `ms` (Unix Timestamp in milliseconds) and `utc` property. e.g.
+    ```json
+    {
+      "utc": "2018-02-26 10:35:47 UTC",
+      "ms": 1519641347834
+    }
+    ```

@@ -2,7 +2,7 @@
 
 Webooks are a way to deliver [Event payloads](/integrations/event_payloads/) to your API.
 
-To enable a Webhook integration, visit the *[Mbaasy App Publisher Console](https://console.mbaasy.com) > [App] > Settings > Integrations* page and add a new Webhook integration by selecting `Webhook` as the *target*, enter a unique `name` and your `Endpoint URL`.
+To enable a Webhook integration, visit the ***[Mbaasy App Publisher Console](https://console.mbaasy.com) > Apps [App] > Settings > Integrations*** page and add a new Webhook integration by selecting `Webhook` as the *target*, enter a unique `name` and your `Endpoint URL`.
 
 Webhooks will be delivered using the **POST** HTTP method.
 

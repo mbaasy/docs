@@ -84,7 +84,7 @@ Click *Add user* and you're done.
 
 ## Real-time developer notifications
 
-Google Play can send event notifications when subscription entitlements change. Every Google Play App registered with Mbaasy come furnished with a unique Google Cloud Pub/Sub Topic, making the process as simple as copying the Pub/Sub topic from the *[Mbaasy App Publisher Console](https://console.mbaasy.com) > Apps > [App] > Settings > Play Store settings* page and pasting it on the *[Google Play Developer Publisher Console](https://play.google.com/apps/publish) > [App] > Development tools > Services & APIs* page in the *Real-time developer notifications* section.
+Google Play can send event notifications when subscription entitlements change. Every Google Play App registered with Mbaasy come furnished with a unique Google Cloud Pub/Sub Topic, making the process as simple as copying the Pub/Sub topic from the ***[Mbaasy App Publisher Console](https://console.mbaasy.com) > Apps > [App] > Settings > Play Store settings*** page and pasting it on the ***[Google Play Developer Publisher Console](https://play.google.com/apps/publish) > [App] > Development tools > Services & APIs*** page in the *Real-time developer notifications* section.
 
 ![Real-time developer notifications](/assets/images/play_store/real-time-developer-notifications.jpg)
 

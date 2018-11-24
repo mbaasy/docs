@@ -25,7 +25,7 @@ Next, [create a new IAM user](https://console.aws.amazon.com/iam/home?#/users$ne
 
 Once your user is created, a new `Access Key ID` and `Secret Access Key` will be furnished for you.
 
-Finally, visit the *[Mbaasy App Publisher Console](https://console.mbaasy.com) > [App] > Settings > Integrations* page and add a new SQS integration by selecting `AWS SQS` as the *target*, enter a unique `name`, the `AWS region`, `Access Key ID` and `Secret Access Key` and press save.
+Finally, visit the ***[Mbaasy App Publisher Console](https://console.mbaasy.com) > Apps > [App] > Settings > Integrations*** page and add a new SQS integration by selecting `AWS SQS` as the *target*, enter a unique `name`, the `AWS region`, `Access Key ID` and `Secret Access Key` and press save.
 
 ### Signature Validation
 
