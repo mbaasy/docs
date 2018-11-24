@@ -8,6 +8,8 @@ docs:
         href: /getting_started/google_play/
       - title: Subscription update fetching
         href: /getting_started/subscription_update_fetching/
+      - title: Importing historical data
+        href: /getting_started/imports/
   - title: Client API
     desc: The client API is responsible for handling communication between your app(s) and Mbaasy. These pages describe, in detail, the RESTful API endpoints.
     docs:
