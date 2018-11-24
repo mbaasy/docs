@@ -98,6 +98,16 @@ td:first-child {
   }
 }
 
+.footnotes {
+  font-size: smaller;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  &:before {
+    content: "Footnotes";
+    font-weight: bold;
+  }
+}
+
 .algolia-autocomplete {
   width: 100%;
 }

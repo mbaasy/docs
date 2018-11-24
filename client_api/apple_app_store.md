@@ -10,14 +10,15 @@ Notify Mbaasy of, and add metadata to iOS purchases and subscription receipts us
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `receipt` ^ | String | A Base64 encoded string containing the receipt. |
-| `country_code` | String | [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code of the end user's App Store region. [Please refer to Retrieving the App Store Region](#retrieving-the-app-store-region)
-| `identifier_for_vendor` | String | The [[UIDevice identifierForVendor](https://developer.apple.com/reference/uikit/uidevice#//apple_ref/occ/instp/UIDevice/identifierForVendor)]. |
+| `receipt` [^man] | String | A Base64 encoded string containing the receipt. |
+| `country_code` [^opt] | String | [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code of the end user's App Store region. [Please refer to Retrieving the App Store Region](#retrieving-the-app-store-region)
+| `identifier_for_vendor` [^opt] | String | The [[UIDevice identifierForVendor](https://developer.apple.com/reference/uikit/uidevice#//apple_ref/occ/instp/UIDevice/identifierForVendor)]. |
 | `user_identifier` | String | User ID corresponding to your user database |
-| `ip_address` | String | V4 or V6 IP address of the end user. Defaults to the network request IP if omitted, send `NULL` to prevent the IP address from being stored. |
-| `metadata` | Object | Store any arbitrary data to be recorded against the purchase order. e.g. Campaign ID or prices. |
+| `ip_address` [^opt] | String | V4 or V6 IP address of the end user. Defaults to the network request IP if omitted, send `NULL` to prevent the IP address from being stored. |
+| `metadata` [^opt] | Object | Store any arbitrary data to be recorded against the purchase order. e.g. Campaign ID or prices. |
 
-*^ denotes a required property.*
+[^man]: This property is **mandatory**.
+[^opt]: This property is **optional**.
 
 ## HTTP response codes
 

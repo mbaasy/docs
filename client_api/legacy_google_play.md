@@ -10,15 +10,16 @@ For existing Android code bases that **do not** retain the original `INAPP_PURCH
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| `package_name` ^ | String | The packageName extracted from the `INAPP_PURCHASE_DATA` provided by the [getBuyIntent()](https://developer.android.com/google/play/billing/billing_reference.html#getBuyIntent) method. |
-| `purchase_token` ^ | String | The purchaseToken extracted from the `INAPP_PURCHASE_DATA` provided by the [getBuyIntent()](https://developer.android.com/google/play/billing/billing_reference.html#getBuyIntent) method. |
-| `product_id` ^ | String | The productId extracted from the `INAPP_PURCHASE_DATA` provided by the [getBuyIntent()](https://developer.android.com/google/play/billing/billing_reference.html#getBuyIntent) method. |
-| `order_id` | String | The orderId extracted from the `INAPP_PURCHASE_DATA` provided by the getBuyIntent() method. |
-| `user_identifier` | String | User ID corresponding to your user database. |
-| `ip_address` | String | V4 or V6 IP address of the end user. Defaults to the network request IP if omitted, send `NULL` to prevent the IP address from being stored. |
-| `metadata` | Object | Store any arbitrary data to be recorded against the purchase order. e.g. Campaign ID or prices. |
+| `package_name` [^man] | String | The packageName extracted from the `INAPP_PURCHASE_DATA` provided by the [getBuyIntent()](https://developer.android.com/google/play/billing/billing_reference.html#getBuyIntent) method. |
+| `purchase_token` [^man] | String | The purchaseToken extracted from the `INAPP_PURCHASE_DATA` provided by the [getBuyIntent()](https://developer.android.com/google/play/billing/billing_reference.html#getBuyIntent) method. |
+| `product_id` [^man] | String | The productId extracted from the `INAPP_PURCHASE_DATA` provided by the [getBuyIntent()](https://developer.android.com/google/play/billing/billing_reference.html#getBuyIntent) method. |
+| `order_id` [^opt] | String | The orderId extracted from the `INAPP_PURCHASE_DATA` provided by the getBuyIntent() method. |
+| `user_identifier` [^opt] | String | User ID corresponding to your user database. |
+| `ip_address` [^opt] | String | V4 or V6 IP address of the end user. Defaults to the network request IP if omitted, send `NULL` to prevent the IP address from being stored. |
+| `metadata` [^opt] | Object | Store any arbitrary data to be recorded against the purchase order. e.g. Campaign ID or prices. |
 
-*^ denotes a required property.*
+[^man]: This property is **mandatory**.
+[^opt]: This property is **optional**.
 
 ## HTTP response codes
 
