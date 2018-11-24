@@ -1,8 +1,10 @@
-# GraphQL API - Authentication
+# GraphQL API - Authentication & Programmatic Access
 
 Programmatic access to the GraphQL API requires authentication via a Service Account furnished [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token).
 
-To use the GraphQL API with a service account, you must generate a JWT, signed with the private key you receive when you create a service account.
+Service accounts can be created on the ***[Mbaasy App Publisher Console](https://console.mbaasy.com) > Account > Organizations > [Organization] > Access > API Service Accounts*** page.
+
+To use the GraphQL API with a service account, you must first generate a JWT, signed with the private key you receive when you create a service account.
 
 It is important to note that **Mbaasy does not save the private key** anywhere on our system, we make it available to you only on creation. If you loose your private key you will need to create a new service account.
 
