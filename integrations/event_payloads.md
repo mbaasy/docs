@@ -31,7 +31,7 @@ Any change to an In App Purchase resource will trigger an event, you can subscri
   "name": "in_app_purchase.updated",
   "data": {
     "id": "b981d914-9453-483f-a970-f70c350ad780",
-    "versions": 3,
+    "version": 3,
     "marketplace": "itunes_connect",
     "app_family_id": "8b111c2b-5971-493f-8bee-3fcf3cfcc215",
     "fact_id": "2bad56e0-e550-4dd5-a258-a0c4d91ae8f5",
