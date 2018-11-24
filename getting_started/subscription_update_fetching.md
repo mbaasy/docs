@@ -5,7 +5,7 @@ Subscription update fetching ensures subscriptions are fetched after the current
 You'll find the subscription fetching controls on the *[Mbaasy App Publisher Console](https://console.mbaasy.com) > [App] > Settings > General Settings* Page.
 
 <div class="alert alert-warning">
-  <p>Please be aware that subscription update fetching counts toward your allocated events regardless of any detected changes to the subscription properties.</p>
+  <p>⚠ Please be aware that subscription update fetching counts toward your allocated events regardless of any detected changes to the subscription properties.</p>
 </div>
 
 ![Subscription update fetching](/assets/images/subscription_update_fetching.jpg)

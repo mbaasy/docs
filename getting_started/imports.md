@@ -1,4 +1,4 @@
-# Getting Started - Importing historical data
+# Getting Started - Importing Historical Data
 
 Historical data can be uploaded via the *[Mbaasy App Publisher Console](https://console.mbaasy.com) > Apps > [App] > Settings > Imports* page.
 

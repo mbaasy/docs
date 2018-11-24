@@ -13,8 +13,7 @@ $headings-font-weight: normal;
 @import "bootstrap/grid";
 @import "bootstrap/tables";
 @import "bootstrap/forms";
-@import "bootstrap/list-group";
-@import "bootstrap/nav";
+@import "bootstrap/alert";
 @import "bootstrap/utilities";
 @import "bootstrap/print";
 @import 'highlight';
@@ -30,10 +29,8 @@ h1 {
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-td {
-  code {
-    word-break: normal;
-  }
+td:first-child {
+  white-space: nowrap;
 }
 
 .sidebar {
