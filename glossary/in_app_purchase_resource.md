@@ -25,6 +25,7 @@ The table below describes the In-App Purchase Resource's properties.
 | `in_trial_period` | Boolean | Indicates if the subscription is in the trial period. |
 | `in_grace_period` | Boolean | Indicates if the marketplace is still trying to renew the subscription. |
 | `metadata` | Object | The `metadata` received via an uploaded receipt / purchase order. |
+| `entitlements` | Array[String] | Lists the matched entitlement/offering combinations. |
 | `purchased_at` | Timestamp[^ts] | Timestamp when the subscription first started / was originally purchased. |
 | `current_period_start_at` | Timestamp[^ts] | The date and time when the current subscription period started (Only available on subscription purchases) |
 | `current_period_end_at` | Timestamp[^ts] | The date and time when the current subscription period will/has ended. (Only available on subscription purchases) |

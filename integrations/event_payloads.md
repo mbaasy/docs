@@ -50,6 +50,9 @@ Any change to an In App Purchase resource will trigger an event, you can subscri
     "metadata": {
       "campaign_id": "0074db55-999b-4470-8e87-a71fe549a9bb"
     },
+    "entitlements": [
+      "premium/annually"
+    ],
     "purchased_at": {
       "utc": "2018-02-26 10:35:47 UTC",
       "ms": 1519641347834

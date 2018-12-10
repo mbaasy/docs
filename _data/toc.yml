@@ -6,6 +6,8 @@ docs:
         href: /getting_started/apple_app_store/
       - title: Configuring an Android (Google Play) app
         href: /getting_started/google_play/
+      - title: Entitlements
+        href: /getting_started/entitlements/
       - title: Subscription update fetching
         href: /getting_started/subscription_update_fetching/
       - title: Importing historical data
